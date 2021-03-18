@@ -1,158 +1,161 @@
 #include <iostream>
+
 using namespace std;
 
-int main() {
+int main()
+{
+	char identity1[13];
+	int identity2[13];
 
-	int identity[13];
+	cout << "ÁÖ¹Î¹øÈ£ 13ÀÚ¸® ÀÔ·Â ( - Á¦¿Ü, ¼ıÀÚ »çÀÌ»çÀÌ ¸¶´Ù °ø¹é ÇÊ¿ä)\n";
 
-	cout << "ì£¼ë¯¼ë²ˆí˜¸ 13ìë¦¬ ì…ë ¥ ( - ì œì™¸, ìˆ«ìë§ˆë‹¤ ê³µë°± í•„ìš”)\n";
-	
-	for (int i = 0; i < 13; i++)
-	{
-		cin >> identity[i];
+	cin >> identity1;
+
+	for (int i = 0; i < 13; i++) {
+		identity2[i] = int(identity1[i] - '0');
 	}
-	
-	cout << "ì„±ë³„ : ";
 
-	if (identity[6] % 2 == 1)
+	cout << "¼ºº° : ";
+
+	if (identity2[6] % 2 == 1)
 	{
-		cout << "ë‚¨" << endl;
+		cout << "³²" << endl;
 	}
 	else
 	{
-		cout << "ì—¬" << endl;
+		cout << "¿©" << endl;
 	}
 
-	cout << "ë‚˜ì´ : ";
+	cout << "³ªÀÌ : ";
 
-	switch (identity[0])
+	switch (identity2[0])
 	{
 	case 0:
-		cout << 22 - identity[1];
+		cout << 22 - identity2[1];
 		break;
 	case 1:
-		cout << 12 - identity[1];
+		cout << 12 - identity2[1];
 		break;
 	case 9:
-		cout << 10 - identity[1] + 22;
+		cout << 10 - identity2[1] + 22;
 		break;
 	case 8:
-		cout << 20 - identity[1] + 22;
+		cout << 20 - identity2[1] + 22;
 		break;
 	case 7:
-		cout << 30 - identity[1] + 22;
+		cout << 30 - identity2[1] + 22;
 		break;
 	case 6:
-		cout << 40 - identity[1] + 22;
+		cout << 40 - identity2[1] + 22;
 		break;
 	case 5:
-		cout << 50 - identity[1] + 22;
+		cout << 50 - identity2[1] + 22;
 		break;
 	default:
 		break;
 	}
 
-	cout << "ì„¸\n";
-	cout << "ì¶œìƒë…„ë„ : ";
-	
-	if (identity[0] >= 0)
-		cout << 20 << identity[0] << identity[1];
+	cout << "¼¼\n";
+	cout << "Ãâ»ı³âµµ : ";
+
+	if (identity2[0] >= 0)
+		cout << 20 << identity2[0] << identity2[1];
 	else
-		cout << 19 << identity[0] << identity[1];
+		cout << 19 << identity2[0] << identity2[1];
 
-	cout << "ë…„\n";
-	cout << "ì¶œìƒì§€ì—­ : ";
+	cout << "³â\n";
+	cout << "Ãâ»ıÁö¿ª : ";
 
-	switch (identity[11])
+	switch (identity2[11])
 	{
 	case 0:
-		if (identity[12] == 9)
+		if (identity2[12] == 9)
 		{
-			cout << "ë¶€ì‚°\n";
+			cout << "ºÎ»ê\n";
 			break;
 		}
 		else
 		{
-			cout << "ì„œìš¸\n";
+			cout << "¼­¿ï\n";
 			break;
 		}
 	case 1:
-		if (identity[12] < 3)
+		if (identity2[12] < 3)
 		{
-			cout << "ë¶€ì‚°\n";
+			cout << "ºÎ»ê\n";
 			break;
 		}
-		else if (identity[12] < 6)
+		else if (identity2[12] < 6)
 		{
-			cout << "ì¸ì²œ\n";
+			cout << "ÀÎÃµ\n";
 			break;
 		}
 		else
 		{
-			cout << "ê²½ê¸°ë„\n";
+			cout << "°æ±âµµ\n";
 			break;
 		}
 	case 2:
-		if (identity[12] < 6)
+		if (identity2[12] < 6)
 		{
-			cout << "ê²½ê¸°ë„\n";
+			cout << "°æ±âµµ\n";
 			break;
 		}
 		else
 		{
-			cout << "ê°•ì›ë„\n";
+			cout << "°­¿øµµ\n";
 			break;
 		}
 	case 3:
-		if (identity[12] < 5)
+		if (identity2[12] < 5)
 		{
-			cout << "ê°•ì›ë„\n";
+			cout << "°­¿øµµ\n";
 			break;
 		}
 		else
 		{
-			cout << "ì¶©ì²­ë¶ë„\n";
+			cout << "ÃæÃ»ºÏµµ\n";
 			break;
 		}
 	case 4:
-		if (identity[12] < 8)
+		if (identity2[12] < 8)
 		{
-			cout << "ì¶©ì²­ë‚¨ë„\n";
+			cout << "ÃæÃ»³²µµ\n";
 			break;
 		}
 		else
 		{
-			cout << "ì „ë¼ë¶ë„\n";
+			cout << "Àü¶óºÏµµ\n";
 			break;
 		}
 
 	case 5:
-		if (identity[12] < 5)
+		if (identity2[12] < 5)
 		{
-			cout << "ì „ë¼ë¶ë„\n";
+			cout << "Àü¶óºÏµµ\n";
 			break;
 		}
 		else
 		{
-			cout << "ì „ë¼ë‚¨ë„\n";
+			cout << "Àü¶ó³²µµ\n";
 			break;
 		}
 	case 6:
-		if (identity[12] < 7)
+		if (identity2[12] < 7)
 		{
-			cout << "ì „ë¼ë‚¨ë„\n";
+			cout << "Àü¶ó³²µµ\n";
 			break;
-		}	
-		else 
+		}
+		else
 		{
-			cout << "ê²½ìƒë„\n";
+			cout << "°æ»óµµ\n";
 			break;
 		}
 	default:
-		cout << "ê²½ìƒë„\n";
+		cout << "°æ»óµµ\n";
 		break;
 
 	}
 
-		return 0;
+	return 0;
 }
