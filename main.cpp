@@ -2,29 +2,28 @@
 using namespace std;
 
 int main() {
-	// your code goes here
 
 	int identity[13];
 
-	cout << "ÁÖ¹Î¹øÈ£ 13ÀÚ¸® ÀÔ·Â ( - Á¦¿Ü, ¼ıÀÚ¸¶´Ù °ø¹é ÇÊ¿ä)\n";
+	cout << "ì£¼ë¯¼ë²ˆí˜¸ 13ìë¦¬ ì…ë ¥ ( - ì œì™¸, ìˆ«ìë§ˆë‹¤ ê³µë°± í•„ìš”)\n";
 	
 	for (int i = 0; i < 13; i++)
 	{
 		cin >> identity[i];
 	}
 	
-	cout << "¼ºº° : ";
+	cout << "ì„±ë³„ : ";
 
 	if (identity[6] % 2 == 1)
 	{
-		cout << "³²" << endl;
+		cout << "ë‚¨" << endl;
 	}
 	else
 	{
-		cout << "¿©" << endl;
+		cout << "ì—¬" << endl;
 	}
 
-	cout << "³ªÀÌ : ";
+	cout << "ë‚˜ì´ : ";
 
 	switch (identity[0])
 	{
@@ -53,104 +52,104 @@ int main() {
 		break;
 	}
 
-	cout << "¼¼\n";
-	cout << "Ãâ»ı³âµµ : ";
+	cout << "ì„¸\n";
+	cout << "ì¶œìƒë…„ë„ : ";
 	
 	if (identity[0] >= 0)
 		cout << 20 << identity[0] << identity[1];
 	else
 		cout << 19 << identity[0] << identity[1];
 
-	cout << "³â\n";
-	cout << "Ãâ»ıÁö¿ª : ";
+	cout << "ë…„\n";
+	cout << "ì¶œìƒì§€ì—­ : ";
 
 	switch (identity[11])
 	{
 	case 0:
 		if (identity[12] == 9)
 		{
-			cout << "ºÎ»ê\n";
+			cout << "ë¶€ì‚°\n";
 			break;
 		}
 		else
 		{
-			cout << "¼­¿ï\n";
+			cout << "ì„œìš¸\n";
 			break;
 		}
 	case 1:
 		if (identity[12] < 3)
 		{
-			cout << "ºÎ»ê\n";
+			cout << "ë¶€ì‚°\n";
 			break;
 		}
 		else if (identity[12] < 6)
 		{
-			cout << "ÀÎÃµ\n";
+			cout << "ì¸ì²œ\n";
 			break;
 		}
 		else
 		{
-			cout << "°æ±âµµ\n";
+			cout << "ê²½ê¸°ë„\n";
 			break;
 		}
 	case 2:
 		if (identity[12] < 6)
 		{
-			cout << "°æ±âµµ\n";
+			cout << "ê²½ê¸°ë„\n";
 			break;
 		}
 		else
 		{
-			cout << "°­¿øµµ\n";
+			cout << "ê°•ì›ë„\n";
 			break;
 		}
 	case 3:
 		if (identity[12] < 5)
 		{
-			cout << "°­¿øµµ\n";
+			cout << "ê°•ì›ë„\n";
 			break;
 		}
 		else
 		{
-			cout << "ÃæÃ»ºÏµµ\n";
+			cout << "ì¶©ì²­ë¶ë„\n";
 			break;
 		}
 	case 4:
 		if (identity[12] < 8)
 		{
-			cout << "ÃæÃ»³²µµ\n";
+			cout << "ì¶©ì²­ë‚¨ë„\n";
 			break;
 		}
 		else
 		{
-			cout << "Àü¶óºÏµµ\n";
+			cout << "ì „ë¼ë¶ë„\n";
 			break;
 		}
 
 	case 5:
 		if (identity[12] < 5)
 		{
-			cout << "Àü¶óºÏµµ\n";
+			cout << "ì „ë¼ë¶ë„\n";
 			break;
 		}
 		else
 		{
-			cout << "Àü¶ó³²µµ\n";
+			cout << "ì „ë¼ë‚¨ë„\n";
 			break;
 		}
 	case 6:
 		if (identity[12] < 7)
 		{
-			cout << "Àü¶ó³²µµ\n";
+			cout << "ì „ë¼ë‚¨ë„\n";
 			break;
 		}	
 		else 
 		{
-			cout << "°æ»óµµ\n";
+			cout << "ê²½ìƒë„\n";
 			break;
 		}
 	default:
-		cout << "°æ»óµµ\n";
+		cout << "ê²½ìƒë„\n";
 		break;
 
 	}
