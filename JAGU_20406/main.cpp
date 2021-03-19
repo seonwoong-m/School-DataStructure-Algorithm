@@ -4,14 +4,14 @@ using namespace std;
 
 int main()
 {
-	char identity1[13];
-	int identity2[13];
+	char identity1[14];
+	int identity2[14];
 
 	cout << "주민번호 13자리 입력 ( - 제외)\n";
 
 	cin >> identity1;
 
-	for (int i = 0; i < 13; i++) {
+	for (int i = 0; i < 14; i++) {
 		identity2[i] = int(identity1[i] - '0');
 	}
 
