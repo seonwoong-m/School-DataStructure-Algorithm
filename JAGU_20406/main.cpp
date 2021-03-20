@@ -2,22 +2,27 @@
 
 using namespace std;
 
+void changeCharToInt(char identity_char[14], int identity_int[14])
+{
+	for (int i = 0; i < 14; i++) {
+		identity_int[i] = int(identity_char[i] - '0');
+	}
+}
+
 int main()
 {
-	char identity1[14];
-	int identity2[14];
+	char id_char[14];
+	int id_int[14];
 
 	cout << "주민번호 13자리 입력 ( - 제외)\n";
 
-	cin >> identity1;
+	cin >> id_char;
 
-	for (int i = 0; i < 14; i++) {
-		identity2[i] = int(identity1[i] - '0');
-	}
+	changeCharToInt(id_char, id_int);
 
 	cout << "성별 : ";
 
-	if (identity2[6] % 2 == 1)
+	if (id_int[6] % 2 == 1)
 	{
 		cout << "남" << endl;
 	}
@@ -28,28 +33,28 @@ int main()
 
 	cout << "나이 : ";
 
-	switch (identity2[0])
+	switch (id_int[0])
 	{
 	case 0:
-		cout << 22 - identity2[1];
+		cout << 22 - id_int[1];
 		break;
 	case 1:
-		cout << 12 - identity2[1];
+		cout << 12 - id_int[1];
 		break;
 	case 9:
-		cout << 10 - identity2[1] + 22;
+		cout << 10 - id_int[1] + 22;
 		break;
 	case 8:
-		cout << 20 - identity2[1] + 22;
+		cout << 20 - id_int[1] + 22;
 		break;
 	case 7:
-		cout << 30 - identity2[1] + 22;
+		cout << 30 - id_int[1] + 22;
 		break;
 	case 6:
-		cout << 40 - identity2[1] + 22;
+		cout << 40 - id_int[1] + 22;
 		break;
 	case 5:
-		cout << 50 - identity2[1] + 22;
+		cout << 50 - id_int[1] + 22;
 		break;
 	default:
 		break;
@@ -58,18 +63,18 @@ int main()
 	cout << "세\n";
 	cout << "출생년도 : ";
 
-	if (identity2[0] >= 0)
-		cout << 20 << identity2[0] << identity2[1];
+	if (id_int[0] >= 0)
+		cout << 20 << id_int[0] << id_int[1];
 	else
-		cout << 19 << identity2[0] << identity2[1];
+		cout << 19 << id_int[0] << id_int[1];
 
 	cout << "년\n";
 	cout << "출생지역 : ";
 
-	switch (identity2[11])
+	switch (id_int[11])
 	{
 	case 0:
-		if (identity2[12] == 9)
+		if (id_int[12] == 9)
 		{
 			cout << "부산\n";
 			break;
@@ -80,12 +85,12 @@ int main()
 			break;
 		}
 	case 1:
-		if (identity2[12] < 3)
+		if (id_int[12] < 3)
 		{
 			cout << "부산\n";
 			break;
 		}
-		else if (identity2[12] < 6)
+		else if (id_int[12] < 6)
 		{
 			cout << "인천\n";
 			break;
@@ -96,7 +101,7 @@ int main()
 			break;
 		}
 	case 2:
-		if (identity2[12] < 6)
+		if (id_int[12] < 6)
 		{
 			cout << "경기도\n";
 			break;
@@ -107,7 +112,7 @@ int main()
 			break;
 		}
 	case 3:
-		if (identity2[12] < 5)
+		if (id_int[12] < 5)
 		{
 			cout << "강원도\n";
 			break;
@@ -118,7 +123,7 @@ int main()
 			break;
 		}
 	case 4:
-		if (identity2[12] < 8)
+		if (id_int[12] < 8)
 		{
 			cout << "충청남도\n";
 			break;
@@ -130,7 +135,7 @@ int main()
 		}
 
 	case 5:
-		if (identity2[12] < 5)
+		if (id_int[12] < 5)
 		{
 			cout << "전라북도\n";
 			break;
@@ -141,7 +146,7 @@ int main()
 			break;
 		}
 	case 6:
-		if (identity2[12] < 7)
+		if (id_int[12] < 7)
 		{
 			cout << "전라남도\n";
 			break;
