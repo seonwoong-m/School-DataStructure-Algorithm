@@ -1,27 +1,19 @@
-#include <iostream>
-
-using namespace std;
+#include "JAGU.h"
 
 int main()
 {
-	const int cNum = 4;
+	JAGU j;
 
-	int pascal[cNum][cNum] = { 0, };
+	int a = 0;
 
-	for (int i = 0; i < cNum; i++)
-	{
-		pascal[i][0] = 1;
-		for (int j = 0; j < cNum; j++)
-		{
-			if (j > 0 && i > 0)
-				pascal[i][j] = pascal[i - 1][j] + pascal[i - 1][j - 1];
-			if (pascal[i][j] > 0)
-				cout << pascal[i][j] << " ";
-		}
+	cout << "파스칼의 삼각형(1)   문자열 역출력(2)" << endl;
 
-		cout << endl;
-	}
+	cin >> a;
 
+	if (a == 1)
+		j.PascalT();
+	else if (a == 2)
+		j.ReverseChar();
 
 	return 0;
 }
