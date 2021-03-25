@@ -11,6 +11,7 @@ int main()
 
 	cin >> a;
 
+
 	if (a == 1)
 	{
 		cout << "1부터 몇까지 더할 것인지 입력하시오\n";
@@ -29,18 +30,21 @@ int main()
 	{
 		cout << "몇 팩토리얼을 구할 것인지 입력하시오\n";
 		cin >> n;
-		cout << " " << n << "! = " << j.Factorial(n) << endl;
+		cout << n << "! = " << j.Factorial(n) << endl;
 		return 0;
 	}
 	else if (a == 4)
 	{
 		cout << "몇 팩토리얼을 구할 것인지 입력하시오\n";
 		cin >> n;
-		cout << " " << n << "! = " << j.Factorial2(n) << endl;
+		cout << n << "! = " << j.Factorial2(n) << endl;
 		return 0;
 	}
 	else
-		cout << "1 ~ 4의 숫자만 입력하시오\n";
+	{
+		cout << "1부터 4까지 중에서 입력하시오\n";
+		main();		
+	}
 
 	return 0;
 }
