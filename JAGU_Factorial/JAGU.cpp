@@ -10,7 +10,7 @@ int JAGU::Gauss2(int n)
 	if (n == 1)
 		return 1;
 	else
-		return (n)+Gauss(n - 1);
+		return (n)+Gauss2(n - 1);
 }
 
 int JAGU::Factorial(int n)

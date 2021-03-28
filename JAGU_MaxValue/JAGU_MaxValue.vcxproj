@@ -21,10 +21,9 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{75646411-d21a-4528-b12b-8c0201a2347e}</ProjectGuid>
-    <RootNamespace>JAGUFibonacci</RootNamespace>
+    <ProjectGuid>{555c385e-7890-4f2e-b6cc-0e6cba31474a}</ProjectGuid>
+    <RootNamespace>JAGUMaxValue</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>JAGU_Fibonacci</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -140,9 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Hanoi.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="reverse.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
