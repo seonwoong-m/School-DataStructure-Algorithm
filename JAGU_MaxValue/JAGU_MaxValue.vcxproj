@@ -139,6 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="bonus1.cpp" />
     <ClCompile Include="bonus2.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
