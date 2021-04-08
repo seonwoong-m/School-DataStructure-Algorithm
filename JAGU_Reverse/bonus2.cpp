@@ -61,6 +61,12 @@
 //	cout << "두 번째 숫자를 입력하시오" << endl;
 //	cin >> a;
 //
+//	if (n == a)
+//	{
+//		cout << "서로 다른 수를 입력하시오" << endl;
+//		return main();
+//	}
+//
 //	cout << "두 수 사이의 짝수는\n";
 //	cout << Even(n, a);
 //
