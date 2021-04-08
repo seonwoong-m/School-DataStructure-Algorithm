@@ -27,6 +27,12 @@
 //
 //	cin >> n;
 //
+//	if (n <= 0)
+//	{
+//		cout << "1이상의 수만 써주십시오" << endl;
+//		return main();
+//	}
+//
 //	cout << endl;
 //	cout << "구구단\n";
 //	cout << MultiplicationTable(n, a) << endl;
