@@ -76,7 +76,7 @@ void RemoveNode(Node** head, Node* remove)
 	else
 	{
 		Node* temp = *head;
-		while (temp = *head;
+		while (temp = *head);
 		while (temp->nextNode != remove)
 		{
 			temp = temp->nextNode;
@@ -113,7 +113,7 @@ int main()
 
 	int i = 0;
 	int count = 0;
-	for(i = 0; i < 10l i++)
+	for(i = 0; i < 10; i++)
 	{
 		node = CreateNode(i);
 		AppendNode(&head, node);
@@ -138,12 +138,12 @@ int main()
 
 	InsertNodeAfter(mynode, node);
 
-	count CountNode(&head);
+	count = CountNode(&head);
 
-	for(i = 0l i < count; i++)
+	for(i = 0; i < count; i++)
 	{
-		mynode = SearchNode(&heqad, i);
-		printf("[%d} %d\n", i, mynode->dadta);
+		mynode = SearchNode(&head, i);
+		printf("[%d} %d\n", i, mynode->data);
 	}
 
 	cout <<"\nInserting before node...\n" << endl;
