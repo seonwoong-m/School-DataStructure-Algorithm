@@ -3,52 +3,40 @@
 
 using namespace std;
 
+stack<int> num;
+
 int main()
 {
-	stack<char> s1;
-	stack<int> s2;
-	int n = 0;
-	int a = 0;
-	int b = 0;;
+	int number = 0;
+	int temp = 0;
 
-	cin >> n;
+	cout << "0 보다 큰 숫자를 입력하시오\n" << ">> ";
+	cin >> number;
 
-	b = n;
-
-	while (true)
+	if (number < 0)
 	{
-		if (b <= 0)
+		exit(0);
+	}
+	else
+	{
+		while (true)
 		{
-			a++;
-			break;
+			if (number > 999)
+			{
+				temp = number % 1000;
+				num.push(temp);
+				number /= 1000;
+			}
+			else if (number < 1000 && number >= 0)
+			{
+				num.push(number);
+			}
 		}
-		else
+
+		while (!num.empty())
 		{
-			b /= 1000;
-			a++;
+			cout << num.top() << ",";
+			num.pop();
 		}
 	}
-
-	for (int i = 0; i < a; i++)
-	{
-		if (n >= 1000)
-		{
-			s2.push(n % 1000);
-			s1.push(',');
-			n /= 1000;
-		}
-		else if(n < 1000)
-		{
-			s2.push(n);
-		}
-	}
-
-	for (int i = 0; i < a; i++)
-	{
-		cout << s2.top() << s1.top();
-		s1.pop();
-		s2.pop();
-	}
-
-
 }

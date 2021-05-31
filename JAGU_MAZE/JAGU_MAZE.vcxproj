@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{b62b69fb-0ced-474a-8749-2d2ad31ca996}</ProjectGuid>
-    <RootNamespace>JAGUQueue</RootNamespace>
+    <ProjectGuid>{799540ec-495e-419b-b0f8-3c643a0e6dd1}</ProjectGuid>
+    <RootNamespace>JAGUMAZE</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -141,7 +141,6 @@
   <ItemGroup>
     <ClCompile Include="main.cpp" />
     <ClCompile Include="main2.cpp" />
-    <ClCompile Include="main3.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
