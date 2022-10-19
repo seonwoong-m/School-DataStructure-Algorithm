@@ -29,6 +29,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "JAGU_MAZE", "JAGU_MAZE\JAGU
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "JAGU_Stack3", "JAGU_Stack3\JAGU_Stack3.vcxproj", "{6C537054-AF65-40FE-8616-7416E2466AD2}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "JAGU_TreeTraversal", "JAGU_TreeTraversal\JAGU_TreeTraversal.vcxproj", "{79AB191B-7D05-43F3-936F-5C49DB834895}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -141,6 +143,14 @@ Global
 		{6C537054-AF65-40FE-8616-7416E2466AD2}.Release|x64.Build.0 = Release|x64
 		{6C537054-AF65-40FE-8616-7416E2466AD2}.Release|x86.ActiveCfg = Release|Win32
 		{6C537054-AF65-40FE-8616-7416E2466AD2}.Release|x86.Build.0 = Release|Win32
+		{79AB191B-7D05-43F3-936F-5C49DB834895}.Debug|x64.ActiveCfg = Debug|x64
+		{79AB191B-7D05-43F3-936F-5C49DB834895}.Debug|x64.Build.0 = Debug|x64
+		{79AB191B-7D05-43F3-936F-5C49DB834895}.Debug|x86.ActiveCfg = Debug|Win32
+		{79AB191B-7D05-43F3-936F-5C49DB834895}.Debug|x86.Build.0 = Debug|Win32
+		{79AB191B-7D05-43F3-936F-5C49DB834895}.Release|x64.ActiveCfg = Release|x64
+		{79AB191B-7D05-43F3-936F-5C49DB834895}.Release|x64.Build.0 = Release|x64
+		{79AB191B-7D05-43F3-936F-5C49DB834895}.Release|x86.ActiveCfg = Release|Win32
+		{79AB191B-7D05-43F3-936F-5C49DB834895}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
